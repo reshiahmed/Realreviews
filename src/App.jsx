@@ -1,96 +1,58 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { locales, localeNames, translations } from './i18n'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function Counter({ target, decimals = 0, suffix = '' }) {
-  const ref = useRef(null)
+function VideoSection() {
+  const [playing, setPlaying] = useState(false)
+  const videoRef = useRef(null)
 
-  useEffect(() => {
-    const el = ref.current
-    const counter = { val: 0 }
-    const tween = gsap.to(counter, {
-      val: target,
-      duration: 1.6,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: el,
-        start: 'top 85%',
-        toggleActions: 'play none none reverse',
-      },
-      onUpdate: () => {
-        el.textContent = counter.val.toFixed(decimals) + suffix
-      },
-    })
-    return () => tween.kill()
-  }, [target, decimals, suffix])
+  const handlePlay = () => {
+    setPlaying(true)
+    requestAnimationFrame(() => videoRef.current?.play())
+  }
 
-  return <div className="stat-num" ref={ref}>0</div>
+  return (
+    <section className="video-section">
+      <div className={`video-frame${playing ? ' is-playing' : ''}`}>
+        {playing ? (
+          <video
+            ref={videoRef}
+            className="video-el"
+            controls
+            playsInline
+            preload="none"
+            poster="/assets/video/product-demo-poster.jpg"
+          >
+            <source src="/assets/video/product-demo.webm" type="video/webm" />
+            <source src="/assets/video/product-demo.mp4" type="video/mp4" />
+          </video>
+        ) : (
+          <button type="button" className="video-poster" onClick={handlePlay} aria-label="Play video">
+            <img src="/assets/video/product-demo-poster.jpg" alt="" loading="lazy" />
+            <span className="play-btn">
+              <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                <path d="M8 5v14l11-7z" fill="currentColor" />
+              </svg>
+            </span>
+          </button>
+        )}
+      </div>
+    </section>
+  )
 }
 
-export default function App() {
-  const heroImgRef = useRef(null)
+export default function App({ locale }) {
   const heroRef = useRef(null)
+  const t = translations[locale]
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.badge', { y: -20, opacity: 0, duration: 0.7, ease: 'power2.out' })
       gsap.from('h1', { y: 30, opacity: 0, duration: 0.8, delay: 0.1, ease: 'power2.out' })
       gsap.from('.hero-sub', { y: 20, opacity: 0, duration: 0.8, delay: 0.2, ease: 'power2.out' })
       gsap.from('.hero-actions', { y: 20, opacity: 0, duration: 0.8, delay: 0.3, ease: 'power2.out' })
-      gsap.from('.price-row, .stars', { y: 15, opacity: 0, duration: 0.8, delay: 0.4, ease: 'power2.out' })
-      gsap.from(heroImgRef.current, { scale: 0.85, opacity: 0, duration: 1, delay: 0.2, ease: 'power3.out' })
-
-      gsap.to(heroImgRef.current, {
-        y: 60,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: heroRef.current,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: 1,
-        },
-      })
-
-      gsap.from('.feature', {
-        y: 60,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: '.features',
-          start: 'top 80%',
-          toggleActions: 'play none none reverse',
-        },
-      })
-
-      gsap.from('.steps .step', {
-        y: 50,
-        opacity: 0,
-        duration: 0.7,
-        stagger: 0.15,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: '.steps',
-          start: 'top 80%',
-          toggleActions: 'play none none reverse',
-        },
-      })
-
-      gsap.from('.stat', {
-        y: 40,
-        opacity: 0,
-        duration: 0.7,
-        stagger: 0.1,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: '.stat-band',
-          start: 'top 80%',
-          toggleActions: 'play none none reverse',
-        },
-      })
 
       gsap.from('.cta-band h2, .cta-band p, .cta-band .btn-light', {
         y: 30,
@@ -111,95 +73,88 @@ export default function App() {
 
   return (
     <>
-      <nav className="nav">
-        <div className="logo">MoreReviews</div>
-        <a href="#buy" className="nav-cta">Buy Now</a>
+      <nav className="nav" dir="ltr">
+        <a href={`/${locale}/`} className="logo" aria-label="MoreReviews home">
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/assets/brand/variations/morereviews-nav-black-320.webp 1x, /assets/brand/variations/morereviews-nav-black-640.webp 2x"
+            />
+            <img
+              src="/assets/brand/variations/morereviews-nav-black-320.png"
+              srcSet="/assets/brand/variations/morereviews-nav-black-320.png 1x, /assets/brand/variations/morereviews-nav-black-640.png 2x"
+              width="320"
+              height="93"
+              alt="MoreReviews"
+            />
+          </picture>
+        </a>
+        <div className="nav-actions">
+          <LanguageSwitcher locale={locale} />
+          <a href="#buy" className="nav-cta">{t.nav.buyNow}</a>
+        </div>
       </nav>
 
       <div className="hero" ref={heroRef}>
         <div className="hero-copy">
-          <div className="badge"><span>★★★★★</span> Trusted by 2,000+ businesses</div>
-          <h1>Get more <em>5-star</em> Google reviews. Just one tap.</h1>
-          <p className="hero-sub">The NFC + QR review card that turns happy customers into 5-star Google reviews in seconds — no app, no typing, no friction.</p>
+          <h1>
+            {t.hero.titlePrefix}<em>{t.hero.titleAccent}</em>{t.hero.titleSuffix}
+            {t.hero.titleSecondLine && <>{' '}<span className="hero-title-second">{t.hero.titleSecondLine}</span></>}
+          </h1>
+          <p className="hero-sub">{t.hero.sub}</p>
           <div className="hero-actions">
-            <a href="#buy" className="btn-primary">Buy Now — $29</a>
-            <a href="#how" className="btn-secondary">See how it works</a>
+            <a href="#buy" className="btn-primary">{t.hero.cta}</a>
           </div>
-          <div className="price-row">
-            <span className="price">$29.00</span>
-            <span className="price-old">$45.00</span>
-          </div>
-          <div className="stars">★★★★★ <span className="stars-count">4.9/5 from 340 reviews</span></div>
-        </div>
-        <div className="hero-media">
-          <img ref={heroImgRef} src="/assets/google-review-card-hero-v2.png" alt="MoreReviews NFC Google review card next to smartphone" />
         </div>
       </div>
 
-      <section className="features">
-        <div className="feature">
-          <div className="feature-icon">⚡</div>
-          <h3>Tap & Review</h3>
-          <p>Customers tap their phone on the card and land directly on your Google review page — no searching required.</p>
-        </div>
-        <div className="feature">
-          <div className="feature-icon">📱</div>
-          <h3>Works on Any Phone</h3>
-          <p>NFC for modern phones, QR code as backup. Every customer can leave a review, every time.</p>
-        </div>
-        <div className="feature">
-          <div className="feature-icon">📈</div>
-          <h3>More Reviews, Fast</h3>
-          <p>Businesses using MoreReviews see 3-5x more reviews within the first month.</p>
-        </div>
-      </section>
-
-      <section id="how" className="how">
-        <h2 className="section-title">How it works</h2>
-        <p className="section-sub">Set up once. Collect reviews forever.</p>
-        <div className="steps">
-          <div className="step">
-            <div className="step-num">1</div>
-            <h4>Set your link</h4>
-            <p>We program the card with your Google Business review link.</p>
-          </div>
-          <div className="step">
-            <div className="step-num">2</div>
-            <h4>Place it at checkout</h4>
-            <p>Set the card on your counter, table, or hand it to customers directly.</p>
-          </div>
-          <div className="step">
-            <div className="step-num">3</div>
-            <h4>Watch reviews roll in</h4>
-            <p>One tap or scan takes customers straight to your review form.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="stat-band">
-        <div className="stat">
-          <Counter target={2000} />
-          <div className="stat-label">Businesses using MoreReviews</div>
-        </div>
-        <div className="stat">
-          <Counter target={4.9} decimals={1} />
-          <div className="stat-label">Average customer rating</div>
-        </div>
-        <div className="stat">
-          <Counter target={5} suffix="x" />
-          <div className="stat-label">More reviews within 30 days</div>
-        </div>
-      </section>
+      <VideoSection />
 
       <section id="buy" className="cta-band">
-        <h2>Ready to grow your reviews?</h2>
-        <p>Get your MoreReviews Card today — free shipping, lifetime NFC programming included.</p>
-        <a href="#" className="btn-light">Buy Now — $29</a>
+        <h2>{t.ctaBand.title}</h2>
+        <p>{t.ctaBand.body}</p>
+        <a href="#" className="btn-light">{t.ctaBand.cta}</a>
       </section>
-
-      <footer>
-        &copy; 2026 MoreReviews. All rights reserved.
-      </footer>
     </>
+  )
+}
+
+function LanguageSwitcher({ locale }) {
+  const [open, setOpen] = useState(false)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const close = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false)
+    }
+    document.addEventListener('pointerdown', close)
+    return () => document.removeEventListener('pointerdown', close)
+  }, [])
+
+  return (
+    <div className="lang-switcher" ref={ref} dir="ltr">
+      <button
+        type="button"
+        className="lang-switcher-btn"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-haspopup="menu"
+      >
+        {localeNames[locale]}
+      </button>
+      <div className="lang-menu" role="menu" hidden={!open}>
+        {locales.map((item) => (
+          <a
+            key={item}
+            href={`/${item}/`}
+            role="menuitem"
+            aria-current={item === locale ? 'page' : undefined}
+            className={item === locale ? 'is-active' : ''}
+          >
+            {localeNames[item]}
+          </a>
+        ))}
+      </div>
+    </div>
   )
 }

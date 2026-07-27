@@ -1,0 +1,260 @@
+{
+  "root": "/Users/ahmedreshi/Documents/Realreviews",
+  "cats": {
+    "raster": [
+      {
+        "path": "public/assets/google-review-card-hero-v2.png",
+        "size": 1498054,
+        "dims": null
+      },
+      {
+        "path": "public/assets/video/product-demo-poster.jpg",
+        "size": 49375,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/favicon-16x16.png",
+        "size": 442,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/morereviews-logo.png",
+        "size": 183654,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/android-chrome-192x192.png",
+        "size": 9985,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/morereviews-social-square-1080x1080.png",
+        "size": 40107,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/apple-touch-icon.png",
+        "size": 9284,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/morereviews-social-1200x630.png",
+        "size": 39577,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/morereviews-icon-bw.png",
+        "size": 156319,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/morereviews-google-profile-720x720.png",
+        "size": 24350,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/morereviews-linkedin-1200x627.png",
+        "size": 39557,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/favicon-48x48.png",
+        "size": 1619,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/android-chrome-512x512.png",
+        "size": 42440,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/mstile-150x150.png",
+        "size": 7142,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/morereviews-twitter-1200x600.png",
+        "size": 39375,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/favicon-32x32.png",
+        "size": 962,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-black-on-white-112.png",
+        "size": 4166,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-white-on-black-1024.png",
+        "size": 53794,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-white-transparent-256.png",
+        "size": 8862,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-logo-white-on-black-640.png",
+        "size": 23568,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-black-on-white-512.png",
+        "size": 24448,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-black-transparent-112.png",
+        "size": 2967,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-logo-white-transparent.png",
+        "size": 36900,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-black-on-white-1024.png",
+        "size": 60230,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-black-transparent-512.png",
+        "size": 17663,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-white-on-black-256.png",
+        "size": 9626,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-nav-black-640.png",
+        "size": 18186,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-logo-black-on-white-640.png",
+        "size": 24781,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-white-on-black-112.png",
+        "size": 3937,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-black-transparent-256.png",
+        "size": 7771,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-white-on-black-512.png",
+        "size": 21929,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-logo-black-transparent.png",
+        "size": 34485,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-logo-white-on-black-1280.png",
+        "size": 55694,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-nav-black-320.png",
+        "size": 7557,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-logo-black-on-white-1280.png",
+        "size": 58867,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-white-transparent-512.png",
+        "size": 20685,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-nav-black-1280.png",
+        "size": 42752,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-black-transparent-1024.png",
+        "size": 42777,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-black-on-white-256.png",
+        "size": 10492,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-white-transparent-1024.png",
+        "size": 50994,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-icon-white-transparent-112.png",
+        "size": 3241,
+        "dims": null
+      },
+      {
+        "path": "tmp/imagegen/morereviews-icon-bw-chroma.png",
+        "size": 963821,
+        "dims": null
+      },
+      {
+        "path": "tmp/imagegen/morereviews-logo-chroma.png",
+        "size": 1001148,
+        "dims": null
+      }
+    ],
+    "modern_img": [
+      {
+        "path": "public/assets/brand/variations/morereviews-nav-black-640.webp",
+        "size": 11398,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-nav-black-320.webp",
+        "size": 5086,
+        "dims": null
+      },
+      {
+        "path": "public/assets/brand/variations/morereviews-nav-black-1280.webp",
+        "size": 24928,
+        "dims": null
+      }
+    ],
+    "svg": [
+      {
+        "path": "public/favicon.svg",
+        "size": 9522
+      }
+    ],
+    "video": [
+      {
+        "path": "public/assets/video/product-demo.webm",
+        "size": 8323753,
+        "info": null
+      },
+      {
+        "path": "public/assets/video/product-demo.mp4",
+        "size": 5057650,
+        "info": null
+      }
+    ],
+    "font": []
+  },
+  "total": 18185920,
+  "est_saved": 9312169.950000001
+}

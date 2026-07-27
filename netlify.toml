@@ -114,3 +114,34 @@
   [headers.values]
     Cache-Control = "no-store"
     X-Robots-Tag = "noindex, nofollow"
+
+[[redirects]]
+  from = "/product"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/product/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/*"
+  to = "/tr/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/*"
+  to = "/ar/index.html"
+  status = 200
