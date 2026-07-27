@@ -39,7 +39,7 @@ a{color:inherit;}
 .lang-switcher{position:relative;}
 .lang-switcher-btn{
   background:transparent;
-  border:1px solid rgba(0,0,0,0.14);
+  border:none;
   border-radius:100px;
   padding:8px 16px;
   font-weight:600;font-size:0.85rem;color:var(--black);
@@ -59,6 +59,7 @@ a{color:inherit;}
   min-width:96px;
   z-index:50;
 }
+.lang-menu[hidden]{display:none;}
 .lang-menu a{
   display:block;
   padding:8px 12px;border-radius:8px;

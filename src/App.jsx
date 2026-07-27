@@ -21,10 +21,10 @@ function VideoSection() {
           <video
             ref={videoRef}
             className="video-el"
-            controls
             playsInline
             preload="none"
             poster="/assets/video/product-demo-poster.jpg"
+            onEnded={() => setPlaying(false)}
           >
             <source src="/assets/video/product-demo.webm" type="video/webm" />
             <source src="/assets/video/product-demo.mp4" type="video/mp4" />
