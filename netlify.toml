@@ -1,0 +1,116 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/g/1"
+  to = "/.netlify/functions/review-redirect/1"
+  status = 200
+
+[[redirects]]
+  from = "/g/2"
+  to = "/.netlify/functions/review-redirect/2"
+  status = 200
+
+[[redirects]]
+  from = "/g/3"
+  to = "/.netlify/functions/review-redirect/3"
+  status = 200
+
+[[redirects]]
+  from = "/g/4"
+  to = "/.netlify/functions/review-redirect/4"
+  status = 200
+
+[[redirects]]
+  from = "/g/5"
+  to = "/.netlify/functions/review-redirect/5"
+  status = 200
+
+[[redirects]]
+  from = "/g/6"
+  to = "/.netlify/functions/review-redirect/6"
+  status = 200
+
+[[redirects]]
+  from = "/g/7"
+  to = "/.netlify/functions/review-redirect/7"
+  status = 200
+
+[[redirects]]
+  from = "/g/8"
+  to = "/.netlify/functions/review-redirect/8"
+  status = 200
+
+[[redirects]]
+  from = "/g/9"
+  to = "/.netlify/functions/review-redirect/9"
+  status = 200
+
+[[redirects]]
+  from = "/g/10"
+  to = "/.netlify/functions/review-redirect/10"
+  status = 200
+
+[[redirects]]
+  from = "/g/11"
+  to = "/.netlify/functions/review-redirect/11"
+  status = 200
+
+[[redirects]]
+  from = "/g/12"
+  to = "/.netlify/functions/review-redirect/12"
+  status = 200
+
+[[redirects]]
+  from = "/g/13"
+  to = "/.netlify/functions/review-redirect/13"
+  status = 200
+
+[[redirects]]
+  from = "/g/14"
+  to = "/.netlify/functions/review-redirect/14"
+  status = 200
+
+[[redirects]]
+  from = "/g/15"
+  to = "/.netlify/functions/review-redirect/15"
+  status = 200
+
+[[redirects]]
+  from = "/g/16"
+  to = "/.netlify/functions/review-redirect/16"
+  status = 200
+
+[[redirects]]
+  from = "/g/17"
+  to = "/.netlify/functions/review-redirect/17"
+  status = 200
+
+[[redirects]]
+  from = "/g/18"
+  to = "/.netlify/functions/review-redirect/18"
+  status = 200
+
+[[redirects]]
+  from = "/g/19"
+  to = "/.netlify/functions/review-redirect/19"
+  status = 200
+
+[[redirects]]
+  from = "/g/20"
+  to = "/.netlify/functions/review-redirect/20"
+  status = 200
+
+[[redirects]]
+  from = "/g/*"
+  to = "/.netlify/functions/review-redirect/:splat"
+  status = 200
+
+[[headers]]
+  for = "/g/*"
+
+  [headers.values]
+    Cache-Control = "no-store"
+    X-Robots-Tag = "noindex, nofollow"
