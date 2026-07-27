@@ -6,23 +6,23 @@ const pages = {
   en: {
     dir: 'ltr',
     ogLocale: 'en_US',
-    title: 'MoreReviews — Get 5-Star Google Reviews Instantly',
+    title: 'MoreReviews: Get 5-Star Google Reviews Instantly',
     description:
-      'MoreReviews NFC and QR cards help happy customers leave 5-star Google reviews in seconds—no app, typing, or searching required.',
+      'MoreReviews NFC and QR cards help happy customers leave 5-star Google reviews in seconds, no app, typing, or searching required.',
   },
   tr: {
     dir: 'ltr',
     ogLocale: 'tr_TR',
-    title: 'MoreReviews — Anında 5 Yıldızlı Google Yorumları Alın',
+    title: 'MoreReviews: Anında 5 Yıldızlı Google Yorumları Alın',
     description:
-      'MoreReviews NFC ve QR kartları, memnun müşterilerinizin saniyeler içinde 5 yıldızlı Google yorumu bırakmasını sağlar — uygulama, yazma veya arama gerekmez.',
+      'MoreReviews NFC ve QR kartları, memnun müşterilerinizin saniyeler içinde 5 yıldızlı Google yorumu bırakmasını sağlar, uygulama, yazma veya arama gerekmez.',
   },
   ar: {
     dir: 'rtl',
     ogLocale: 'ar_AR',
-    title: 'MoreReviews — احصل على تقييمات جوجل 5 نجوم فوراً',
+    title: 'MoreReviews: احصل على تقييمات جوجل 5 نجوم فوراً',
     description:
-      'تساعد بطاقات MoreReviews NFC وQR العملاء السعداء على ترك تقييم جوجل 5 نجوم خلال ثوانٍ — بدون تطبيق أو كتابة أو بحث.',
+      'تساعد بطاقات MoreReviews NFC وQR العملاء السعداء على ترك تقييم جوجل 5 نجوم خلال ثوانٍ، بدون تطبيق أو كتابة أو بحث.',
   },
 }
 

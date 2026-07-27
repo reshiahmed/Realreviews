@@ -91,7 +91,7 @@ export default function App({ locale }) {
         </a>
         <div className="nav-actions">
           <LanguageSwitcher locale={locale} />
-          <a href="#buy" className="nav-cta">{t.nav.buyNow}</a>
+          <a href="https://wa.me/905055718759?text=I%20want%20more%20reviews" target="_blank" rel="noopener noreferrer" className="nav-cta">{t.nav.buyNow}</a>
         </div>
       </nav>
 
@@ -103,7 +103,7 @@ export default function App({ locale }) {
           </h1>
           <p className="hero-sub">{t.hero.sub}</p>
           <div className="hero-actions">
-            <a href="#buy" className="btn-primary">{t.hero.cta}</a>
+            <a href="https://wa.me/905055718759?text=I%20want%20more%20reviews" target="_blank" rel="noopener noreferrer" className="btn-primary">{t.hero.cta}</a>
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@ export default function App({ locale }) {
       <section id="buy" className="cta-band">
         <h2>{t.ctaBand.title}</h2>
         <p>{t.ctaBand.body}</p>
-        <a href="#" className="btn-light">{t.ctaBand.cta}</a>
+        <a href="https://wa.me/905055718759?text=I%20want%20more%20reviews" target="_blank" rel="noopener noreferrer" className="btn-light">{t.ctaBand.cta}</a>
       </section>
     </>
   )

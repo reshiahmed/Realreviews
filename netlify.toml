@@ -4,112 +4,112 @@
   functions = "netlify/functions"
 
 [[redirects]]
-  from = "/g/1"
+  from = "/q/1"
   to = "/.netlify/functions/review-redirect/1"
   status = 200
 
 [[redirects]]
-  from = "/g/2"
+  from = "/q/2"
   to = "/.netlify/functions/review-redirect/2"
   status = 200
 
 [[redirects]]
-  from = "/g/3"
+  from = "/q/3"
   to = "/.netlify/functions/review-redirect/3"
   status = 200
 
 [[redirects]]
-  from = "/g/4"
+  from = "/q/4"
   to = "/.netlify/functions/review-redirect/4"
   status = 200
 
 [[redirects]]
-  from = "/g/5"
+  from = "/q/5"
   to = "/.netlify/functions/review-redirect/5"
   status = 200
 
 [[redirects]]
-  from = "/g/6"
+  from = "/q/6"
   to = "/.netlify/functions/review-redirect/6"
   status = 200
 
 [[redirects]]
-  from = "/g/7"
+  from = "/q/7"
   to = "/.netlify/functions/review-redirect/7"
   status = 200
 
 [[redirects]]
-  from = "/g/8"
+  from = "/q/8"
   to = "/.netlify/functions/review-redirect/8"
   status = 200
 
 [[redirects]]
-  from = "/g/9"
+  from = "/q/9"
   to = "/.netlify/functions/review-redirect/9"
   status = 200
 
 [[redirects]]
-  from = "/g/10"
+  from = "/q/10"
   to = "/.netlify/functions/review-redirect/10"
   status = 200
 
 [[redirects]]
-  from = "/g/11"
+  from = "/q/11"
   to = "/.netlify/functions/review-redirect/11"
   status = 200
 
 [[redirects]]
-  from = "/g/12"
+  from = "/q/12"
   to = "/.netlify/functions/review-redirect/12"
   status = 200
 
 [[redirects]]
-  from = "/g/13"
+  from = "/q/13"
   to = "/.netlify/functions/review-redirect/13"
   status = 200
 
 [[redirects]]
-  from = "/g/14"
+  from = "/q/14"
   to = "/.netlify/functions/review-redirect/14"
   status = 200
 
 [[redirects]]
-  from = "/g/15"
+  from = "/q/15"
   to = "/.netlify/functions/review-redirect/15"
   status = 200
 
 [[redirects]]
-  from = "/g/16"
+  from = "/q/16"
   to = "/.netlify/functions/review-redirect/16"
   status = 200
 
 [[redirects]]
-  from = "/g/17"
+  from = "/q/17"
   to = "/.netlify/functions/review-redirect/17"
   status = 200
 
 [[redirects]]
-  from = "/g/18"
+  from = "/q/18"
   to = "/.netlify/functions/review-redirect/18"
   status = 200
 
 [[redirects]]
-  from = "/g/19"
+  from = "/q/19"
   to = "/.netlify/functions/review-redirect/19"
   status = 200
 
 [[redirects]]
-  from = "/g/20"
+  from = "/q/20"
   to = "/.netlify/functions/review-redirect/20"
   status = 200
 
 [[redirects]]
-  from = "/g/*"
+  from = "/q/*"
   to = "/.netlify/functions/review-redirect/:splat"
   status = 200
 
 [[headers]]
-  for = "/g/*"
+  for = "/q/*"
 
   [headers.values]
     Cache-Control = "no-store"

@@ -10,9 +10,9 @@ export function localeFromPath(pathname) {
 export const translations = {
   en: {
     seo: {
-      title: 'MoreReviews — Get 5-Star Google Reviews Instantly',
+      title: 'MoreReviews: Get 5-Star Google Reviews Instantly',
       description:
-        'MoreReviews NFC and QR cards help happy customers leave 5-star Google reviews in seconds—no app, typing, or searching required.',
+        'MoreReviews NFC and QR cards help happy customers leave 5-star Google reviews in seconds, no app, typing, or searching required.',
       dir: 'ltr',
       ogLocale: 'en_US',
     },
@@ -27,15 +27,15 @@ export const translations = {
     },
     ctaBand: {
       title: 'Ready to grow your reviews?',
-      body: 'Get your MoreReviews Card today — free shipping, lifetime NFC programming included.',
-      cta: 'Buy Now — $29',
+      body: 'Get your MoreReviews Card today, free shipping, lifetime NFC programming included.',
+      cta: 'Buy Now, $29',
     },
   },
   tr: {
     seo: {
-      title: 'MoreReviews — Anında 5 Yıldızlı Google Yorumları Alın',
+      title: 'MoreReviews: Anında 5 Yıldızlı Google Yorumları Alın',
       description:
-        'MoreReviews NFC ve QR kartları, memnun müşterilerinizin saniyeler içinde 5 yıldızlı Google yorumu bırakmasını sağlar — uygulama, yazma veya arama gerekmez.',
+        'MoreReviews NFC ve QR kartları, memnun müşterilerinizin saniyeler içinde 5 yıldızlı Google yorumu bırakmasını sağlar, uygulama, yazma veya arama gerekmez.',
       dir: 'ltr',
       ogLocale: 'tr_TR',
     },
@@ -49,15 +49,15 @@ export const translations = {
     },
     ctaBand: {
       title: 'Yorumlarınızı artırmaya hazır mısınız?',
-      body: 'MoreReviews Kartınızı bugün edinin — ücretsiz kargo, ömür boyu NFC programlama dahil.',
-      cta: 'Satın Al — 899 ₺',
+      body: 'MoreReviews Kartınızı bugün edinin, ücretsiz kargo, ömür boyu NFC programlama dahil.',
+      cta: 'Satın Al, 999 ₺',
     },
   },
   ar: {
     seo: {
-      title: 'MoreReviews — احصل على تقييمات جوجل 5 نجوم فوراً',
+      title: 'MoreReviews: احصل على تقييمات جوجل 5 نجوم فوراً',
       description:
-        'تساعد بطاقات MoreReviews NFC وQR العملاء السعداء على ترك تقييم جوجل 5 نجوم خلال ثوانٍ — بدون تطبيق أو كتابة أو بحث.',
+        'تساعد بطاقات MoreReviews NFC وQR العملاء السعداء على ترك تقييم جوجل 5 نجوم خلال ثوانٍ، بدون تطبيق أو كتابة أو بحث.',
       dir: 'rtl',
       ogLocale: 'ar_AR',
     },
@@ -71,8 +71,8 @@ export const translations = {
     },
     ctaBand: {
       title: 'هل أنت مستعد لزيادة تقييماتك؟',
-      body: 'احصل على بطاقة MoreReviews اليوم — شحن مجاني وبرمجة NFC مدى الحياة.',
-      cta: 'اشترِ الآن — $29',
+      body: 'احصل على بطاقة MoreReviews اليوم، شحن مجاني وبرمجة NFC مدى الحياة.',
+      cta: 'اشترِ الآن، $29',
     },
   },
 }

@@ -61,7 +61,7 @@ export default function ProductPage() {
     <>
       <nav className="nav">
         <div className="logo">MoreReviews</div>
-        <a href="#buy" className="nav-cta">Buy Now</a>
+        <a href="https://wa.me/905055718759?text=I%20want%20more%20reviews" target="_blank" rel="noopener noreferrer" className="nav-cta">Buy Now</a>
       </nav>
 
       <div className="stage" ref={stageRef}>
@@ -80,8 +80,8 @@ export default function ProductPage() {
 
       <section id="buy" className="cta-band">
         <h2>Ready to grow your reviews?</h2>
-        <p>Get your MoreReviews Card today — free shipping, lifetime NFC programming included.</p>
-        <a href="#" className="btn-light">Buy Now — $29</a>
+        <p>Get your MoreReviews Card today, free shipping, lifetime NFC programming included.</p>
+        <a href="https://wa.me/905055718759?text=I%20want%20more%20reviews" target="_blank" rel="noopener noreferrer" className="btn-light">Buy Now, $29</a>
       </section>
     </>
   )

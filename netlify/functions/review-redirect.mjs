@@ -1,5 +1,5 @@
 const destinations = {
-  1: null,
+  1: "https://g.page/r/CZYxAi7itJ8zEBM/review",
   2: null,
   3: null,
   4: null,
@@ -32,13 +32,7 @@ export default async (request) => {
   const destination = destinations[id];
 
   if (!destination) {
-    return new Response(null, {
-      status: 204,
-      headers: {
-        "Cache-Control": "no-store",
-        "X-Robots-Tag": "noindex, nofollow",
-      },
-    });
+    return Response.redirect(new URL("/", url).toString(), 302);
   }
 
   return Response.redirect(destination, 302);
