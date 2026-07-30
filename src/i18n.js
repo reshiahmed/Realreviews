@@ -28,7 +28,7 @@ export const translations = {
     ctaBand: {
       title: 'Ready to grow your reviews?',
       body: 'Get your MoreReviews Card today, free shipping, lifetime NFC programming included.',
-      cta: 'Buy Now, $29',
+      cta: 'Buy Now, 599 ₺',
     },
   },
   tr: {
@@ -50,7 +50,7 @@ export const translations = {
     ctaBand: {
       title: 'Yorumlarınızı artırmaya hazır mısınız?',
       body: 'MoreReviews Kartınızı bugün edinin, ücretsiz kargo, ömür boyu NFC programlama dahil.',
-      cta: 'Satın Al, 999 ₺',
+      cta: 'Satın Al, 599 ₺',
     },
   },
   ar: {
@@ -72,7 +72,7 @@ export const translations = {
     ctaBand: {
       title: 'هل أنت مستعد لزيادة تقييماتك؟',
       body: 'احصل على بطاقة MoreReviews اليوم، شحن مجاني وبرمجة NFC مدى الحياة.',
-      cta: 'اشترِ الآن، $29',
+      cta: 'اشترِ الآن، 599 ₺',
     },
   },
 }

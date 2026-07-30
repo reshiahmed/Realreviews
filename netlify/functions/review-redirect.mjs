@@ -1,6 +1,6 @@
 const destinations = {
-  1: "https://g.page/r/CZYxAi7itJ8zEBM/review",
-  2: null,
+  1: "https://search.google.com/local/writereview?placeid=ChIJY4ZoGz2xyhQRDsJ_dooQv6g",
+  2: "https://search.google.com/local/writereview?placeid=ChIJAx8xhiqxyhQRljECLuK0nzM",
   3: null,
   4: null,
   5: null,

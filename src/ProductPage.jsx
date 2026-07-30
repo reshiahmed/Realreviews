@@ -81,7 +81,7 @@ export default function ProductPage() {
       <section id="buy" className="cta-band">
         <h2>Ready to grow your reviews?</h2>
         <p>Get your MoreReviews Card today, free shipping, lifetime NFC programming included.</p>
-        <a href="https://wa.me/905055718759?text=I%20want%20more%20reviews" target="_blank" rel="noopener noreferrer" className="btn-light">Buy Now, $29</a>
+        <a href="https://wa.me/905055718759?text=I%20want%20more%20reviews" target="_blank" rel="noopener noreferrer" className="btn-light">Buy Now, 599 ₺</a>
       </section>
     </>
   )
